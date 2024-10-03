@@ -8,21 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Golden_Ed_shop
+namespace Golden_Ed_shop.Resources
 {
-    public partial class Ed_Inicial : Form
+    public partial class Menuprince6 : Form
     {
-        public Ed_Inicial()
+        public Menuprince6()
         {
             InitializeComponent();
         }
 
-        private void panel1_MouseClick(object sender, MouseEventArgs e)
+        private void Menuprince6_Load(object sender, EventArgs e)
         {
-            Form1 frm = new Form1();
-            this.Visible = false;
-            frm.ShowDialog();
-            this.Visible = true;
+            
         }
     }
 }
