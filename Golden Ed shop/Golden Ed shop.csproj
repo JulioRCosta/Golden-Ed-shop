@@ -46,25 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ed_Inicial.cs">
+    <Compile Include="Controller\Connection.cs" />
+    <Compile Include="Model\Usuario.cs" />
+    <Compile Include="View\Ed_Inicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ed_Inicial.Designer.cs">
+    <Compile Include="View\Ed_Inicial.Designer.cs">
       <DependentUpon>Ed_Inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Loginhaha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Loginhaha.Designer.cs">
+      <DependentUpon>Loginhaha.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Ed_Inicial.resx">
+    <Compile Include="Resources\Menuprince6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Menuprince6.Designer.cs">
+      <DependentUpon>Menuprince6.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Ed_Inicial.resx">
       <DependentUpon>Ed_Inicial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Loginhaha.resx">
+      <DependentUpon>Loginhaha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -76,6 +93,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\Menuprince6.resx">
+      <DependentUpon>Menuprince6.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +132,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\81pX2-CEN3L1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %283%29_resized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %283%29_resized %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R %283%29_resized %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2222.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhh_resized.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhh_resized %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhh_resized %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hhhh_resized %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
