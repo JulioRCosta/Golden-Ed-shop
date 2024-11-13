@@ -28,59 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Nome = new System.Windows.Forms.TextBox();
+            this.Idade = new System.Windows.Forms.TextBox();
+            this.CEP = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.TextBox();
+            this.NC = new System.Windows.Forms.TextBox();
+            this.CVC = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Nome
             // 
-            this.textBox1.Location = new System.Drawing.Point(648, 394);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(365, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Nome.Location = new System.Drawing.Point(648, 394);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(365, 20);
+            this.Nome.TabIndex = 0;
+          
             // 
-            // textBox2
+            // Idade
             // 
-            this.textBox2.Location = new System.Drawing.Point(648, 449);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(365, 20);
-            this.textBox2.TabIndex = 1;
+            this.Idade.Location = new System.Drawing.Point(648, 449);
+            this.Idade.Name = "Idade";
+            this.Idade.Size = new System.Drawing.Size(365, 20);
+            this.Idade.TabIndex = 1;
             // 
-            // textBox3
+            // CEP
             // 
-            this.textBox3.Location = new System.Drawing.Point(648, 503);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(365, 20);
-            this.textBox3.TabIndex = 2;
+            this.CEP.Location = new System.Drawing.Point(648, 503);
+            this.CEP.Name = "CEP";
+            this.CEP.Size = new System.Drawing.Size(365, 20);
+            this.CEP.TabIndex = 2;
+           
             // 
-            // textBox4
+            // Email
             // 
-            this.textBox4.Location = new System.Drawing.Point(648, 568);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(365, 20);
-            this.textBox4.TabIndex = 3;
+            this.Email.Location = new System.Drawing.Point(648, 568);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(365, 20);
+            this.Email.TabIndex = 3;
             // 
-            // textBox5
+            // NC
             // 
-            this.textBox5.Location = new System.Drawing.Point(648, 625);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(365, 20);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.NC.Location = new System.Drawing.Point(648, 625);
+            this.NC.Name = "NC";
+            this.NC.Size = new System.Drawing.Size(365, 20);
+            this.NC.TabIndex = 4;
+          
             // 
-            // textBox6
+            // CVC
             // 
-            this.textBox6.Location = new System.Drawing.Point(648, 684);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(365, 20);
-            this.textBox6.TabIndex = 5;
+            this.CVC.Location = new System.Drawing.Point(648, 684);
+            this.CVC.Name = "CVC";
+            this.CVC.Size = new System.Drawing.Size(365, 20);
+            this.CVC.TabIndex = 5;
             // 
             // panel1
             // 
@@ -89,7 +91,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(96, 100);
             this.panel1.TabIndex = 6;
-            this.panel1.Click += new System.EventHandler(this.Form1_Load);
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.DoubleClick += new System.EventHandler(this.panel1_Click);
             // 
@@ -104,6 +105,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(1234, 390);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(420, 314);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -111,17 +121,17 @@
             this.BackgroundImage = global::Golden_Ed_shop.Properties.Resources.hahaha;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.CVC);
+            this.Controls.Add(this.NC);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.CEP);
+            this.Controls.Add(this.Idade);
+            this.Controls.Add(this.Nome);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Click += new System.EventHandler(this.panel1_Click);
             this.DoubleClick += new System.EventHandler(this.panel1_Click);
             this.ResumeLayout(false);
@@ -131,14 +141,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Nome;
+        private System.Windows.Forms.TextBox Idade;
+        private System.Windows.Forms.TextBox CEP;
+        private System.Windows.Forms.TextBox Email;
+        private System.Windows.Forms.TextBox NC;
+        private System.Windows.Forms.TextBox CVC;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListView listView1;
     }
 }
 

@@ -19,15 +19,12 @@ namespace Golden_Ed_shop
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void panel1_Click(object sender, EventArgs e)
         {
 
-            MessageBox.Show(textBox1.Text + "\n" + textBox2.Text + "\n" + textBox3.Text + "\n" + textBox4.Text + "\n" + textBox5.Text + "\n" + textBox6.Text);
+            MessageBox.Show(Nome.Text + "\n" + Idade.Text + "\n" + CEP.Text + "\n" + Email.Text + "\n" + NC.Text + "\n" + CVC.Text);
             Menuprince6 frm = new Menuprince6();
             this.Visible = false;
             frm.ShowDialog();
@@ -49,14 +46,6 @@ namespace Golden_Ed_shop
             this.Visible = true;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

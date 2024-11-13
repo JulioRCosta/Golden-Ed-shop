@@ -135,7 +135,7 @@ namespace Golden_Ed_shop.Model
                         (string)rd["Senha"],
                         (System.DateTime)rd["DatadeNascimento"],
                         (int)rd["CVV"],
-                        (int)rd["CPF"],
+                        (string)rd["CPF"],
                         (int)rd["CEP"],
                         (string)rd["Endereço"]
 
