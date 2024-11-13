@@ -31,6 +31,10 @@ namespace Golden_Ed_shop.Controller
             if (con.State == System.Data.ConnectionState.Open)
                 con.Close();
         }
+        public SqlConnection ReturnConnection()
+        {
+            return con;
+        }
     }
     
 }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -31,6 +32,8 @@ namespace Golden_Ed_shop
             this.Visible = false;
             frm.ShowDialog();
             this.Visible = true;
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

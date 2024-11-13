@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\Connection.cs" />
+    <Compile Include="Model\Cad_usuarioDAO.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="View\Ed_Inicial.cs">
       <SubType>Form</SubType>

@@ -27,8 +27,9 @@ namespace Golden_Ed_shop.Model
 
         public string Endereço { get; set; }
 
-        public Usuario(string objetive, string Nome, string Email, int CartaodeCredito, string Senha, DateTime DatadeNascimento, int CVV, int CPF, int CEP, string Endereço) 
+        public Usuario(int Codcliente, string Nome, string Email, int CartaodeCredito, string Senha, DateTime DatadeNascimento, int CVV, int CPF, int CEP, string Endereço) 
         {
+            Codcliente = Codcliente;
             Nome = Nome;
             Email = Email;
             CartaodeCredito = CartaodeCredito;
